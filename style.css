@@ -8,13 +8,11 @@ body {
   overflow: hidden;
 }
 
-.blob {
-  width: 129px;
-  height: 129px;
-  position: absolute;
+#blob {
+  width: 130px;
+  height: 130px;
+  position: 50% 50%;
   will-change: transform;
-  background: url(spritesheets/testanim.png);
-  animation: testanim 2s steps(42) infinite;
 }
 
 #speech {
@@ -75,40 +73,4 @@ body {
   margin-bottom: 10px;
   color: black;
   font-family: cursive;
-}
-/* --- KEYFRAMES --- */
-@keyframes testanim {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 5166px 0;
-  }
-}
-
-@keyframes idleBlob {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes moveBlob {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes annoyedBlob {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
 }

@@ -1,0 +1,36 @@
+/* --- KEYFRAMES --- */
+@keyframes testanim {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 5166px 0;
+  }
+}
+
+@keyframes idleanim {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 12971px 0;
+  }
+}
+/* 
+@keyframes moveBlob {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes annoyedBlob {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+} */
