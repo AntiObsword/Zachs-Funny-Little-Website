@@ -1,26 +1,41 @@
 <!doctype html>
 <html>
   <head>
-    <title>My First Website</title>
+    <title>Zach's Funny Little Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="keyframes.css" />
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <h1>The Awesome Website</h1>
-    <p>Welcome to Zack's website !!!!</p>
+    <h1>Zach's Funny Little Website</h1>
+    <p>Welcome to Zach's website !!!!</p>
     <div id="blob"></div>
-
     <div id="speech"></div>
 
-    <!-- <div id="modal">
+    <!-- <video
+      width="400"
+      height="300"
+      controls=""
+      poster="assets/images/testvideo-poster.png"
+    >
+      <source src="assets/videos/testvideo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video> -->
+
+    <div id="modal">
       <h2 id="agreementTitle">System Access Agreement</h2>
 
-      <div id="scrollBox">
-        <p id="agreement"></p>
+      <div id="scrollContainer">
+        <div id="scrollBox" class="scrollable">
+          <div id="agreement"></div>
+        </div>
+        <div class="fake-scrollbar">
+          <div class="thumb"></div>
+        </div>
       </div>
 
       <button id="acceptBtn" disabled>I Agree</button>
-    </div> -->
+    </div>
     <script type="module" src="bundle.js"></script>
   </body>
 </html>
