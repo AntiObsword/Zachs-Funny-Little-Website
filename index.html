@@ -5,13 +5,84 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="keyframes.css" />
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
   <body>
-    <h1>Zach's Funny Little Website</h1>
-    <p>Welcome to Zach's website !!!!</p>
-    <div id="blob"></div>
-    <div id="speech"></div>
+    <div id="error_box" class="hidden">
+      <h2 id="error_title">Error 404</h2>
+      <p id="error_message">This page could not be found.</p>
+    </div>
+    <!------------- PAGES ------------>
+    <div id="Login" class="page">
+      <h1>Zach's Funny Little Website</h1>
+      <p>Welcome! Please login!</p>
+      <form>
+        <label for="firstname">First Name</label>
+        <input
+          id="firstname"
+          name="firstname"
+          type="text"
+          placeholder="First Name"
+        />
+        <label for="lastname">Last Name</label>
+        <input
+          id="lastname"
+          name="lastname"
+          type="text"
+          placeholder="Last Name"
+        />
+        <label for="midname">Middle Name</label>
+        <input
+          id="midname"
+          name="midname"
+          type="text"
+          placeholder="Middle Name, even though you might not have one"
+        />
+        <label for="cdate">Current Date</label>
+        <input
+          id="cdate"
+          name="cdate"
+          type="date"
+          placeholder="What day is it?"
+        />
+        <label for="p1">First Password</label>
+        <input id="p1" name="p1" type="password" />
+        <label for="p2">Second Password</label>
+        <input id="p2" name="p2" type="password" />
+        <label for="confirmp1">Confirm First Password</label>
+        <input id="confirmp1" name="confirmp1" type="password" />
+        <label for="confirmp2">Confirm Second Password</label>
+        <input id="confirmp2" name="confirmp2" type="password" />
+        <label for="fruit1"> I love Apples</label>
+        <input type="checkbox" id="fruit1" name="fruit1" value="apple" />
+        <label for="fruit2"> I love Oranges</label>
+        <input type="checkbox" id="fruit2" name="fruit2" value="orange" />
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <div id="Home" class="hidden page">
+      <h1>Zach's Funny Little Website</h1>
+      <p>Welcome to Zach's website !!!!</p>
+      <div id="agreements_modal" class="hidden">
+        <h2 id="agreementTitle">System Access Agreement</h2>
 
+        <div id="agmt_viewport">
+          <div id="agmt_content"></div>
+          <div class="scrollbar">
+            <div id="thumb"></div>
+          </div>
+        </div>
+
+        <button id="acceptBtn" disabled>I Agree</button>
+      </div>
+    </div>
+    <div id="About" class="hidden page"></div>
+    <div id="Thanks" class="hidden page"></div>
+    <!------------- NAVIGATION ------------>
+    <div id="horizontal_categories" class="hidden">
+      <button onclick="showPage('Home')">Home</button>
+      <button onclick="showPage('About')">About</button>
+    </div>
     <!-- <video
       width="400"
       height="300"
@@ -21,21 +92,20 @@
       <source src="assets/videos/testvideo.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video> -->
-
-    <div id="modal">
-      <h2 id="agreementTitle">System Access Agreement</h2>
-
-      <div id="scrollContainer">
-        <div id="scrollBox" class="scrollable">
-          <div markdown="1" id="agreement"></div>
-        </div>
-        <div class="fake-scrollbar">
-          <div class="thumb"></div>
-        </div>
-      </div>
-
-      <button id="acceptBtn" disabled>I Agree</button>
+    <!------------- BEYOND ------------>
+    <div id="cookies_box" class="hidden">
+      Do you consent to using cookies on this website? (Even though there is
+      literally there is no justifiable reason for it)
+      <button id="consentBtn"" class="btn">
+        YES
+      </button>
+      <button id="rejectBtn"" class="btn">
+        NO (Yes, but with extra steps)
+      </button>
     </div>
+    <!-------------- BLOB ------------------->
+    <div id="blob" class="hidden"></div>
+    <div id="speech"></div>
     <script type="module" src="bundle.js"></script>
   </body>
 </html>
