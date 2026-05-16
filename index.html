@@ -15,8 +15,7 @@
     <!------------- PAGES ------------>
     <div id="Login" class="page">
       <h1>Zach's Funny Little Website</h1>
-      <p>Welcome! Please login!</p>
-      <form>
+      <form method="post">
         <label for="firstname">First Name</label>
         <input
           id="firstname"
@@ -75,13 +74,234 @@
 
         <button id="acceptBtn" disabled>I Agree</button>
       </div>
+      <p>Unfortunately there is nothing here.</p>
+    </div>
+    <div id="Home2" class="hidden page">
+      <h1>Zach's Not So Funny Little Website</h1>
+      <p>Welcome to Zach's website !!!!</p>
+      <p>Fortunately there is nothing here.</p>
+    </div>
+    <div id="History" class="hidden page">
+      <p>Once upon a time, yadadadadadada</p>
+    </div>
+    <div id="SignOut" class="hidden page">
+      <h1>Oh no what have you done...</h1>
+      <h1>RESETTING WEBSITE...</h1>
+      <p>Editor Note: Hi, editor Zach here, originally, this page was supposed to bring you to the login page, and you would quite literally have to do everything over again. Yes, that includes the Agreements bit. In not so hindsight, that is a terrible idea. I made this project to annoy you, not to make you want to punch your monitor out. You can thank me for being a super nice guy lol.</p>
+    </div>
+    <div id="Forbidden" class="hidden page">
+      <p>The video is not here moron</p>
+    </div>
+    <div id="Collection" class="hidden page">
+      <div id="collection_list">
+        <ul>
+          <li><button onclick="showPage('RandomVideos')">Random Videos</button></li>
+          <li><button onclick="showPage('NotTheButtonToRWMC')">NOT the button to the RWMC</button></li>
+          <li><button onclick="showPage('CatPhotos')">Photos of Cats</button></li>
+          <li><button onclick="showPage('KitKatPhotos')">Photos of Kats</button></li>
+          <li><button onclick="showPage('RandomVideos2')">Random Videos2</button></li>
+          <li><button onclick="showPage('Names')">Bunch of names</button></li>
+          <li><button onclick="showPage('Sellout')">Shameless Sellout</button></li>
+          <li><button onclick="showPage('OtherNames')">Buncha of other names</button></li>
+          <li><button onclick="showPage('MaybeTheButtonToRWMC')">MAYBE the button to the RWMC</button></li>
+          <li><button onclick="showPage('Virus')">A virus</button></li>
+        </ul>
+      </div>
     </div>
     <div id="About" class="hidden page"></div>
-    <div id="Thanks" class="hidden page"></div>
+    <div id="Thanks" class="hidden page">
+      <h1>There is something here that is not here yet. Whatever that means</h1>
+    </div>
+    <!------------- COLLECTION'S PAGES ------------>
+    <div id="RandomVideos" class="hidden page">
+      <div class="grid">
+        <div> <!-- A video contained -->
+          <video 
+            controls=""
+            width="400"
+            height="300"  
+          >
+            <source src="assets/videos/bottleofalltime.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="video_title">Bottle</p>
+        </div>
+        <div> <!-- A video contained -->
+          <video 
+            controls=""
+            width="400"
+            height="300"  
+            poster="assets/images/testvideo-poster.png"
+          >
+            <source src="assets/videos/doggie.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="video_title">Doggie</p>
+        </div>
+        <div> <!-- A video contained -->
+          <video 
+            controls=""
+            width="400"
+            height="300"  
+            poster="assets/images/testvideo-poster.png"
+          >
+            <source src="assets/videos/beez.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="video_title">The Bumblebee Strikes Again</p>
+        </div>
+        <div> <!-- A video contained -->
+          <video 
+            controls=""
+            width="400"
+            height="300"  
+            poster="assets/images/testvideo-poster.png"
+          >
+            <source src="assets/videos/sun_nostalgic.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="video_title">Arise.</p>
+        </div>
+        <div> <!-- A video contained -->
+          <video 
+            controls=""
+            width="400"
+            height="300"  
+          >
+            <source src="assets/videos/theclue.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="video_title">The Clue</p>
+        </div>
+        <div> <!-- A video contained -->
+          <video 
+            controls=""
+            width="400"
+            height="300"  
+          >
+            <source src="assets/videos/whatisbuddytalm.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="video_title">what is buddy sayinnn 😭✌️ 🥀</p>
+        </div>
+      </div>
+    </div>
+    <div id="NotTheButtonToRWMC" class="hidden page">
+      <div class="grid">
+        <div> <!-- A video contained -->
+          <video 
+            controls=""
+            width="400"
+            height="300"  
+            poster="assets/images/testvideo-poster.png"
+          >
+            <source src="assets/videos/notRWMC.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="video_title">I Told You So.</p>
+        </div>
+      </div>
+    </div>
+    <div id="CatPhotos" class="hidden page">
+      <div class="grid">
+        <img class="photo" src="assets/images/cat1.jpeg" alt="cute cat 1"/>
+        <img class="photo" src="assets/images/cat2.png" alt="cute cat 2"/>
+        <img class="photo" src="assets/images/cat3.png" alt="cute cat 3"/>
+        <img class="photo" src="assets/images/cat4.png" alt="cute cat 4"/>
+        <img class="photo" src="assets/images/cat5.png" alt="cute cat 5"/>
+        <img class="photo" src="assets/images/cat6.png" alt="cute cat 6"/>
+        <img class="photo" src="assets/images/cat7.png" alt="cute cat 7"/>
+        <img class="photo" src="assets/images/cat8.png" alt="cute cat 8"/>
+      </div>
+    </div>
+    <div id="KitKatPhotos" class="hidden page">
+      <div class="grid">
+        <img class="photo" src="assets/images/kat1.png" alt="kitkat 1"/>
+        <img class="photo" src="assets/images/kat2.png" alt="kitkat 2"/>
+        <img class="photo" src="assets/images/kat3.png" alt="kitkat 3"/>
+        <img class="photo" src="assets/images/kat4.png" alt="kitkat 4"/>
+        <img class="photo" src="assets/images/kat5.png" alt="kitkat 5"/>
+        <img class="photo" src="assets/images/kat6.png" alt="kitkat 6"/>
+        <img class="photo" src="assets/images/kat7.webp" alt="kitkat 7"/>
+      </div>
+    </div>
+    <div id="RandomVideos2" class="hidden page">
+      <p>Me when the scary video stealer stole all my videos: "Oh no! The Scary Video Stealer stole all my videos!!!"</p>
+    </div>
+    <div id="Names" class="hidden page">
+      <div>
+        <ul>
+          <li>Aaron</li>
+          <li>Aron</li>
+          <li>Arun</li>
+          <li>Beatrix</li>
+          <li>Bea</li>
+          <li>Beau</li>
+          <li>Bumblebee</li>
+          <li>Caron</li>
+          <li>Cameron</li>
+          <li>Camera</li>
+          <li>Claude</li>
+          <li>Dickson</li>
+          <li>Derek</li>
+          <li>Manual</li>
+          <li>Gerald</li>
+          <li>Liddy</li>
+          <li>Jeffrey</li>
+          <li>Charlie</li>
+          <li>Pomenegranate</li>
+          <li class="clickable" onclick="showPage('Home')">Josh Manuel</li>
+          <li>WaitWhatDoWeNameHerNoNoThatIsNotHerNameWeHaveNotSayItYetStopWritingItDownGodammit</li>
+          <li>Birthday</li>
+          <li>Zac</li>
+          <li>Zack</li>
+          <li>Zach, the coolest name of all</li>
+        </ul>
+      </div>
+    </div>
+    <div id="Sellout" class="hidden page"></div>
+    <div id="OtherNames" class="hidden page">
+      <div>
+        <ul>
+          <li>Noraa</li>
+          <li>Nora</li>
+          <li>Nura</li>
+          <li>Xirtaeb</li>
+          <li>Aeb</li>
+          <li>Uaeb</li>
+          <li>Eebelbmubb</li>
+          <li>Norac</li>
+          <li>Noremac</li>
+          <li>Aremac</li>
+          <li>Edualc</li>
+          <li>Noskcid</li>
+          <li>Kered</li>
+          <li>Launam</li>
+          <li>Dlareg</li>
+          <li>Yddil</li>
+          <li>Yerffej</li>
+          <li>Eilrahc</li>
+          <li>Etanargenemop</li>
+          <li>Timmadognwodtignitirwpotsteytitayasevahewonemanrehtonisitahwonrehemawenodotahwtiaw</li>
+          <li>Yadhtrib</li>
+          <li>Caz</li>
+          <li>Kcaz</li>
+          <li>Hcaz, the worst name of all time</li>
+        </ul>
+      </div>
+    </div>
+    <div id="MaybeTheButtonToRWMC" class="hidden page"></div>
+    <div id="Virus" class="hidden page"></div>
     <!------------- NAVIGATION ------------>
     <div id="horizontal_categories" class="hidden">
       <button onclick="showPage('Home')">Home</button>
+      <button onclick="showPage('Home2')">Home, but different</button>
+      <button onclick="showPage('History')">History</button>
+      <button onclick="showPage('SignOut')">Reset</button>
+      <button onclick="showPage('Forbidden')">DON'T CLICK</button>
+      <button onclick="showPage('Collection')">Collection</button>
       <button onclick="showPage('About')">About</button>
+      <button onclick="showPage('Thanks')">?</button>
     </div>
     <!-- <video
       width="400"
@@ -92,10 +312,15 @@
       <source src="assets/videos/testvideo.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video> -->
+    <!------------- LOADER ------------>
+    <div id="loading_overlay" class="hidden">
+      <div class="loader"></div>
+      <h1 class="loader_text">Loading for no reason...</h1>
+      <div class="loader_bg"></div>
+    </div>
     <!------------- BEYOND ------------>
     <div id="cookies_box" class="hidden">
-      Do you consent to using cookies on this website? (Even though there is
-      literally there is no justifiable reason for it)
+      <p> Do you consent to using cookies on this website? (Even though there is literally there is no justifiable reason for it) </p>
       <button id="consentBtn"" class="btn">
         YES
       </button>
@@ -106,6 +331,23 @@
     <!-------------- BLOB ------------------->
     <div id="blob" class="hidden"></div>
     <div id="speech"></div>
-    <script type="module" src="bundle.js"></script>
+
+    <script type="module" src="scripts/blob_anim.js"></script>
+    <script type="module" src="scripts/thescript.js"></script>
+    <script type="module" src="scripts/custom_agreements_scroll.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script>
+      function showPage(id) {
+        document.getElementById("loading_overlay").classList.remove("hidden")
+        document.querySelectorAll(".page").forEach((page) => {
+          page.classList.add("hidden");
+        });
+        setTimeout(()=>{
+          document.getElementById("loading_overlay").classList.add("hidden")
+          document.getElementById(id).classList.remove("hidden")
+        }, Math.random()*2000+500)
+      }
+    </script>
+    <!-- <script type="module" src="bundle.js"></script> -->
   </body>
 </html>

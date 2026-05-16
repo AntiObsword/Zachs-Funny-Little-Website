@@ -10,6 +10,7 @@ body {
   text-align: center;
   width: 100vh;
   height: 100vh;
+  position: relative;
   overflow: hidden;
 }
 
@@ -166,14 +167,16 @@ form {
 }
 /* =============================== */
 #horizontal_categories {
+  display: flex;
+  justify-content: center;
   position: fixed;
-  top: 0;
+  top: 0%;
   width: 100%;
+  height: 2rem;
   background: black;
-  padding: 1rem;
 }
 
-#horizontal_categories a {
+#horizontal_categories button {
   color: white;
   background-color: grey;
   margin-right: 1rem;
@@ -187,9 +190,6 @@ form {
   text-decoration: none;
 }
 
-#vertical_categories {
-}
-
 .page {
   opacity: 1;
   top: 0%;
@@ -201,6 +201,7 @@ form {
   max-height: 100vh;
   display: block;
   overflow-y: auto;
+  margin-top: 2rem;
 }
 
 .hidden {
@@ -210,8 +211,76 @@ form {
   z-index: -1;
 }
 /* =============================== */
-#fake_videos {
+#collection_list {
+  margin-top: 2rem;
+  width: 20%;
+}
+/* =============================== */
+#loading_overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#sponsors {
+.loader_bg {
+  display: block;
+  background-color: white;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+}
+
+.loader_text {
+  color: black;
+  font:
+    2rem Monaco Arial,
+    sans-serif;
+  z-index: 2;
+}
+
+.loader {
+  box-sizing: border-box;
+  border: 16px solid #adadad; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  z-index: 2;
+}
+/* =============================== */
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  margin: 1rem 1rem 5rem 1rem;
+}
+
+.grid div {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  height: min-content;
+  border: #3498db solid 2px;
+}
+
+.photo {
+  max-height: fit-content;
+  width: fit-content;
+  max-width: 10rem;
+}
+/* =============================== */
+.clickable {
+  cursor: pointer;
 }
