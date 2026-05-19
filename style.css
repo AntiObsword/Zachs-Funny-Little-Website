@@ -18,9 +18,9 @@ h1 {
   -webkit-text-stroke: 2px black;
 }
 
-ul {
+ul,
+ol {
   text-align: left;
-  margin-bottom: 5rem;
 }
 /* =============================== BLOB */
 #blob {
@@ -125,6 +125,32 @@ form {
   font-family: cursive;
   order: 1;
 }
+
+#Login > p {
+  color: red;
+  font:
+    20px Arial,
+    sans-serif bold;
+  position: absolute;
+  right: 5rem;
+  top: 30%;
+  max-width: 10%;
+  transform: translate(0%, -50%);
+}
+
+#alegria {
+  max-width: 50rem;
+}
+
+#historical_pic {
+  max-width: 65rem;
+}
+
+#profile_icon {
+  aspect-ratio: 1;
+  background-color: rgb(78, 78, 78);
+  border: #1a1a1a 2px solid;
+}
 /* =============================== COOKIES CONSENT */
 #cookies_box {
   background-image: url("assets/images/cookiesbg.png");
@@ -209,6 +235,17 @@ form {
   margin-top: 2rem;
 }
 
+.squeezed {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.bottom_filler {
+  margin-bottom: 5rem;
+}
+
 .hidden {
   opacity: 0;
   display: none;
@@ -264,6 +301,17 @@ form {
   z-index: 2;
 }
 /* =============================== */
+.account_box {
+  display: flex;
+  flex-direction: column;
+  background-color: #3498db;
+  padding: 2rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -284,6 +332,14 @@ form {
   max-height: fit-content;
   width: fit-content;
   max-width: 10rem;
+}
+
+.ad-banner {
+  position: absolute;
+  width: 20%;
+  right: 5%;
+  top: 4rem;
+  padding-bottom: 5rem;
 }
 /* =============================== */
 #RWMC_video {
