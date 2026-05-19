@@ -58,10 +58,20 @@
         <input type="checkbox" id="fruit2" name="fruit2" value="orange" />
         <input id="submit" type="submit" value="Submit" />
       </form>
+      <p class="hidden">You didn't fill it all the way</p>
     </div>
     <div id="Home" class="hidden page">
       <h1>Zach's Funny Little Website</h1>
       <p>Welcome to Zach's website !!!!</p>
+      <div class="account_box">
+      <div>
+        <img id="profile_icon" src="assets/images/profile_icon.png">
+        <h2 id="name_welcome">Hello, _____!</h2>
+      </div>
+        <h3>Balance: $0</h3>
+        <p>(haha look how poor you are)</p>
+        <h3 id="time_wasted">Time Wasted: 0s</h3>
+      </div>
       <div id="agreements_modal" class="hidden">
         <h2 id="agreementTitle">System Access Agreement</h2>
 
@@ -74,15 +84,21 @@
 
         <button id="acceptBtn" disabled>I Agree</button>
       </div>
-      <p>Unfortunately there is nothing here.</p>
+      <img class="ad-banner">
     </div>
     <div id="Home2" class="hidden page">
       <h1>Zach's Not So Funny Little Website</h1>
       <p>Welcome to Zach's website !!!!</p>
       <p>Fortunately there is nothing here.</p>
+      <img class="ad-banner">
     </div>
     <div id="History" class="hidden page">
-      <p>Once upon a time, yadadadadadada</p>
+      <h1>HISTORY</h1>
+      <img id="historical_pic" src = "assets/images/historical-picture.png">
+      <h4>A picture of our founder, Zach C. Dangerman.</h4>
+      <p>This website was founded in 1929 in reaction to the ever-increasing amount of technological convergence.</p>
+      <p>(I still don't really get what it means. I keep thinking I know what it means only to immediately get shut down when the markings come back.)</p>
+      <div class="bottom_filler"></div>
     </div>
     <div id="SignOut" class="hidden page">
       <h1>Oh no what have you done...</h1>
@@ -90,7 +106,7 @@
       <p>Editor Note: Hi, editor Zach here, originally, this page was supposed to bring you to the login page, and you would quite literally have to do everything over again. Yes, that includes the Agreements bit. In not so hindsight, that is a terrible idea. I made this project to annoy you, not to make you want to punch your monitor out. You can thank me for being a super nice guy lol.</p>
     </div>
     <div id="Forbidden" class="hidden page">
-      <p>The video is not here moron</p>
+      <p>The video is not here, butterhead</p>
     </div>
     <div id="Collection" class="hidden page">
       <div id="collection_list">
@@ -104,11 +120,16 @@
           <li><button onclick="showPage('Sellout')">Shameless Sellout</button></li>
           <li><button onclick="showPage('OtherNames')">Buncha of other names</button></li>
           <li><button onclick="showPage('MaybeTheButtonToRWMC')">MAYBE the button to the RWMC</button></li>
-          <li><button onclick="showPage('Virus')">A virus</button></li>
         </ul>
       </div>
     </div>
-    <div id="About" class="hidden page"></div>
+    <div id="About" class="hidden page">
+      <h1>Nobody Actually Reads This</h1>
+      <p class="squeezed">Look, I would put some BS here about how we value values, or care about workers or whatever if I was a corporate trying to design a website to look as pompous as possible, but on a serious note: WHO even reads these besides students who are potentially trying to look up and learn about researching because their bum teacher gave them an assignment to learn how to do research on the internet and so any inkling of their research on let's say an organisation is completely reliant on the About page of their website. I'd pay you a very fine penny if you, as a average digital consumer, actually goes out of your way to read the About page in a website. And if you say "yes", you are definitely not in the normal category, I'll tell you that much.</p>
+      <img id="alegria" class="squeezed" src="assets/images/alegria-art.png">
+      <h4 class="squeezed">Here's one of those "Alegria" art that corporates seem to obssess over so much. There is nothing else that spells more soullessness than over-usage of this artstyle in websites.</h5>
+        <div class="bottom_filler"></div>
+      </div>
     <div id="Unfinished" class="hidden page">
       <h1>There is something here that is not here yet. Whatever that means</h1>
     </div>
@@ -117,7 +138,7 @@
       <p>Hello, my name is Zhen Hong Chong, referred to as "Zach" (which I'm hoping you picked up)</p><br>
       <p>I made this web experience disguised as a website to watch my RWMC video (which I'm also sure you picked up)</p><br>
       <p>I hope you found it terrible to navigate and got annoyed at some of the commonly found features like:</p>
-      <ol>
+      <ol class="squeezed">
         <li>Resetting Login Page</li>
         <li>Annoying Agreements</li>
         <li>Invasive Cookie Consenting Options</li>
@@ -145,6 +166,12 @@
         <li>Kit Kat Fun Size Bulk Pack. <a href="https://www.confectioneryworld.com.au/kit-kat-nestle-pick-n-mix-4-x-50-x-14g-bulk-box/">https://www.confectioneryworld.com.au/kit-kat-nestle-pick-n-mix-4-x-50-x-14g-bulk-box/</a>. Accessed on 16 May 2026</li>
         <li>Barter Trade Stock Image Preview. <a href="https://www.alamy.com/stock-photo-exchange-or-trade-27647942.html?imageid=4441CD1D-4577-47E5-908A-F988993D4E54&pn=1&searchId=1fd1cf1435859545e47569f31e29545f&searchtype=0">https://www.alamy.com/stock-photo-exchange-or-trade-27647942.html?imageid=4441CD1D-4577-47E5-908A-F988993D4E54&pn=1&searchId=1fd1cf1435859545e47569f31e29545f&searchtype=0</a>. Accessed 18 May 2026</li>
       </ul>
+
+      <p>Thanks to my friend Harrison Harp for allowing me to include that video with his likeness in it</p>
+      
+      <p>... and Lastly... Thank YOU. Farewell.</p>
+
+      <div class="bottom_filler"></div>
     </div>
     <!------------- COLLECTION'S PAGES ------------>
     <div id="RandomVideos" class="hidden page">
@@ -320,8 +347,12 @@
         </ul>
       </div>
     </div>
-    <div id="MaybeTheButtonToRWMC" class="hidden page"></div>
-    <div id="Virus" class="hidden page"></div>
+    <div id="MaybeTheButtonToRWMC" class="hidden page">
+      <h2>HAHA STILL NOT IT</h2>
+      <img id="laughing_gif" class="squeezed" src="assets/gifs/laughing.gif">
+      <h2>YOU WERE SO CLOSE WEREN'T YOU</h2>
+      <div class="bottom_filler"></div>
+    </div>
     <div id="RWMC" class="hidden page">
       <!-- video centered, let user use controls then remove controls the moment it is played -->
       <video 
@@ -374,11 +405,11 @@
     <div id="blob" class="hidden"></div>
     <div id="speech"></div>
 
-    <script type="module" src="scripts/blob_anim.js"></script>
+    <!-- <script type="module" src="scripts/blob_anim.js"></script>
     <script type="module" src="scripts/thescript.js"></script>
     <script type="module" src="scripts/custom_agreements_scroll.js"></script>
     <script type="module" src="scripts/event_bus.js"></script>
-    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script> -->
     <script>
       function showPage(id) {
         document.getElementById("loading_overlay").classList.remove("hidden")
@@ -391,6 +422,6 @@
         }, Math.random()*2000+500)
       }
     </script>
-    <!-- <script type="module" src="bundle.js"></script> -->
+    <script type="module" src="bundle.js"></script>
   </body>
 </html>
