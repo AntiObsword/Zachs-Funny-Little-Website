@@ -15,7 +15,7 @@
     <!------------- PAGES ------------>
     <div id="Login" class="page">
       <h1>Zach's Funny Little Website</h1>
-      <form method="post">
+      <form id="login_form">
         <label for="firstname">First Name</label>
         <input
           id="firstname"
@@ -109,8 +109,12 @@
       </div>
     </div>
     <div id="About" class="hidden page"></div>
-    <div id="Thanks" class="hidden page">
+    <div id="Unfinished" class="hidden page">
       <h1>There is something here that is not here yet. Whatever that means</h1>
+    </div>
+    <div id="Thanks" class="hidden page">
+      <h1>Thanks for visiting my website!!!</h1>
+      <p>Hope you had a good time :)</p>
     </div>
     <!------------- COLLECTION'S PAGES ------------>
     <div id="RandomVideos" class="hidden page">
@@ -131,7 +135,6 @@
             controls=""
             width="400"
             height="300"  
-            poster="assets/images/testvideo-poster.png"
           >
             <source src="assets/videos/doggie.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -143,7 +146,6 @@
             controls=""
             width="400"
             height="300"  
-            poster="assets/images/testvideo-poster.png"
           >
             <source src="assets/videos/beez.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -155,7 +157,6 @@
             controls=""
             width="400"
             height="300"  
-            poster="assets/images/testvideo-poster.png"
           >
             <source src="assets/videos/sun_nostalgic.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -193,7 +194,6 @@
             controls=""
             width="400"
             height="300"  
-            poster="assets/images/testvideo-poster.png"
           >
             <source src="assets/videos/notRWMC.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -250,7 +250,7 @@
           <li>Jeffrey</li>
           <li>Charlie</li>
           <li>Pomenegranate</li>
-          <li class="clickable" onclick="showPage('Home')">Josh Manuel</li>
+          <li class="clickable" onclick="showPage('RWMC')">Josh Manuel</li>
           <li>WaitWhatDoWeNameHerNoNoThatIsNotHerNameWeHaveNotSayItYetStopWritingItDownGodammit</li>
           <li>Birthday</li>
           <li>Zac</li>
@@ -292,6 +292,24 @@
     </div>
     <div id="MaybeTheButtonToRWMC" class="hidden page"></div>
     <div id="Virus" class="hidden page"></div>
+    <div id="RWMC" class="hidden page">
+      <!-- video centered, let user use controls then remove controls the moment it is played -->
+      <video 
+        id="RWMC_video"
+        width="800"
+        height="450"
+        controls=""
+      >
+        <source src="assets/videos/RWMC.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div id="PremiumBox" class="hidden">
+        <h2>You need Premium</h2>
+        <p>To access this video, you need to have Premium. Please click the button below to subscribe to Premium and gain access to this video and many more!</p>
+        <button id="premiumBtn" disabled>Subscribe ($99.99/month)</button>
+      </div>
+    </div>
     <!------------- NAVIGATION ------------>
     <div id="horizontal_categories" class="hidden">
       <button onclick="showPage('Home')">Home</button>
@@ -301,17 +319,11 @@
       <button onclick="showPage('Forbidden')">DON'T CLICK</button>
       <button onclick="showPage('Collection')">Collection</button>
       <button onclick="showPage('About')">About</button>
-      <button onclick="showPage('Thanks')">?</button>
+      <button id="endingBtn" onclick="showPage('Unfinished')">?</button>
+      <div id="notification" class="hidden">
+        Something showed up!
+      </div>
     </div>
-    <!-- <video
-      width="400"
-      height="300"
-      controls=""
-      poster="assets/images/testvideo-poster.png"
-    >
-      <source src="assets/videos/testvideo.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video> -->
     <!------------- LOADER ------------>
     <div id="loading_overlay" class="hidden">
       <div class="loader"></div>
@@ -335,6 +347,7 @@
     <script type="module" src="scripts/blob_anim.js"></script>
     <script type="module" src="scripts/thescript.js"></script>
     <script type="module" src="scripts/custom_agreements_scroll.js"></script>
+    <script type="module" src="scripts/event_bus.js"></script>
     <script type="module" src="scripts/main.js"></script>
     <script>
       function showPage(id) {
